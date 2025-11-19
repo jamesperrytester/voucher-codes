@@ -7,9 +7,6 @@ on:
 
   workflow_dispatch:
     inputs:
-      env:
-        description: "Environment (qa, stage, demo, live)"
-        required: false
       tests:
         description: "Tests to run (wrap in commas and separate tests with spaces)"
         required: false
@@ -74,7 +71,6 @@ jobs:
           npx playwright test --reporter=html,line --project="$project"
         fi
       env:
-        ENV: ${{ inputs.env }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BROWSER: ${{ matrix.browser }}
         PLAYWRIGHT_JSON_OUTPUT_NAME: summary.json
