@@ -1,0 +1,10 @@
+{
+  "browser": {
+    "browserName": "chromium",
+    "userDataDir": "",
+    "launchOptions": {
+      "channel": "chrome",
+      "headless": false
+    }
+  }
+}

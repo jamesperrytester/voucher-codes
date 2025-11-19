@@ -1,0 +1,34 @@
+{
+  "name": "vouchercodes-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test --reporter=list",
+    "test:ui": "npx playwright test --reporter=list --ui",
+    "test:all:chromium:ui": "npx playwright test --project=chromium --reporter=list --ui",
+    "test:all:firefox:ui": "npx playwright test --project=firefox --reporter=list --ui",
+    "test:all:webkit:ui": "npx playwright test --project=webkit --reporter=list --ui",
+    "test:scenario1": "npx playwright test tests/scenario1-ConfirmVoucherCodesPage.spec.ts --reporter=list",
+    "test:scenario1:ui": "npx playwright test tests/scenario1-ConfirmVoucherCodesPage.spec.ts --reporter=list --ui",
+    "test:scenario2": "npx playwright test tests/scenario2-RestaurantSearchSuccess.spec.js --reporter=list",
+    "test:scenario2:ui": "npx playwright test tests/scenario2-RestaurantSearchSuccess.spec.js --reporter=list --ui",
+    "test:scenario3": "npx playwright test tests/scenario3-RestaurantSearchFail.spec.ts --reporter=list",
+    "test:scenario3:ui": "npx playwright test tests/scenario3-RestaurantSearchFail.spec.ts --reporter=list --ui"
+  },
+  "keywords": [],
+  "author": "James Perry",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.3.0"
+  },
+  "page": {
+    "on": {
+      "console": "msg => console.log(msg.text())"
+    }
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.22.0"
+  }
+}
