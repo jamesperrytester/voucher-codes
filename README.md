@@ -137,14 +137,19 @@ This GitHub Actions workflow automates Playwright test execution across multiple
 
 ### 📦 Artifacts
 	- Playwright reports per browser
+	- html report files uploaded as artifacts for review
+	- trace files included for failed tests
 	
 #### Uploaded artifacts include:
 - `playwright-report-${{ matrix.browser }}` → Browser-specific Playwright report
 ---
 
-## 🛠️ Pipeline Run links (including artifact uploads, and extracted data displays in github actions summary):
+## 🛠️ Pipeline Runs
 
-- all browsers - 
-- chrome - 
-- firefox - 
-- webkit -  
+- These are just shown as examples, it is a working yml file with tests executing successfully against individual browsers and all browsers
+- The tests are *not* passing through CI currently and would need some investigation (which I've not had time to do and is not in the scope of this task), they are however passing locally.
+
+- all browsers - https://github.com/jamesperrytester/voucher-codes/actions/runs/19519236460
+- chrome - https://github.com/jamesperrytester/voucher-codes/actions/runs/19519108984
+- firefox - https://github.com/jamesperrytester/voucher-codes/actions/runs/19519226709
+- webkit -  https://github.com/jamesperrytester/voucher-codes/actions/runs/19519231694
