@@ -6,6 +6,7 @@
   "scripts": {
     "test": "npx playwright test --reporter=list",
     "test:ui": "npx playwright test --reporter=list --ui",
+    "test:all:chromium": "npx playwright test --project=chromium --reporter=list",
     "test:all:chromium:ui": "npx playwright test --project=chromium --reporter=list --ui",
     "test:all:firefox:ui": "npx playwright test --project=firefox --reporter=list --ui",
     "test:all:webkit:ui": "npx playwright test --project=webkit --reporter=list --ui",

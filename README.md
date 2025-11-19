@@ -88,7 +88,13 @@ If additional test scenarios are introduced or the test suite becomes more compl
 
 ### Run All Tests (All Browsers, Headless Mode)
 ```bash
-npm run test
+npm run test        # Run all tests on all browsers in headless mode
+```
+
+### Run All Tests (Chromium, Headless Mode)  --- Recommended command for this task 
+
+```bash
+**npm run test:all:chromium   # Run all tests on Chromium in headless mode**
 ```
 
 ### Run Individual Tests (All Browsers, Headless Mode)
