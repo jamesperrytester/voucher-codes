@@ -83,8 +83,8 @@ If additional test scenarios are introduced or the test suite becomes more compl
 
 ## 🧪 Running Tests via PowerShell
 
-- Ensure the path run tests against is >> C:\Users\UserName\voucher-codes\tests
-- Right click 'tests' folder and select 'Open in Integrated Terminal' to open PowerShell in the correct directory, then choose one of the following commands below:
+- Ensure the path to run tests against is >> C:\Users\UserName\voucher-codes\tests
+- Or even easier, Right click 'tests' folder in Visual Studio Code and select 'Open in Integrated Terminal' to open PowerShell in the correct directory, then choose one of the following commands below:
 
 ### Run All Tests (All Browsers, Headless Mode)
 ```bash
@@ -124,7 +124,7 @@ This GitHub Actions workflow automates Playwright test execution across multiple
 ### 🧩 Configurable Inputs
 
 | Input   | Description                                 | Required | Default | Options                        |
-|---------|---------------------------------------------|----------|---------|-------------------------------|           |
+|---------|---------------------------------------------|----------|---------|-------------------------------|
 | tests   | Specific tests to run (space-separated)     | ❌       | (empty) | Custom string                  |
 | browser | Browser to run tests on                     | ✅       | chrome  | all, chrome, firefox, webkit   |
 
