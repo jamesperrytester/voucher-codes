@@ -1,5 +1,5 @@
 name: vouchercodes-task Playwright Tests
-run-name: vouchercodes-task Playwright Tests${{ inputs.tests != '' && format(' ({0})', inputs.tests) || '' }} on ${{ inputs.env }} environment${{ inputs.browser != '' && format(' against {0}', inputs.browser) || '' }}
+run-name: vouchercodes-task Playwright Tests${{ inputs.tests != '' && format(' ({0})', inputs.tests) || '' }} - ${{ inputs.browser != '' && format(' against {0}', inputs.browser) || '' }}
 
 on:
   pull_request:
@@ -58,9 +58,9 @@ jobs:
         browser="${{ matrix.browser }}"
 
         declare -A browser_map=(
-          [chrome]="features-playwright-chrome"
-          [firefox]="features-playwright-firefox"
-          [webkit]="features-playwright-safari"
+          [chrome]="chromium"
+          [firefox]="firefox"
+          [webkit]="webkit"
         )
 
         project="${browser_map[$browser]}"

@@ -5,12 +5,38 @@
 
 This automation task was completed within a strict 3-hour timebox 
 
-- ✅ Full test logic for **Scenarios 1 to 4**
+- ✅ Full test logic for **Scenarios 1 to 3**
 - ✅ A **GitHub Actions YAML workflow** to run tests across all browsers, either sequentially or in parallel
 - ✅ A **matrix strategy** for parallel browser execution
 - ✅ Enhanced `package.json` scripts to support targeted test execution
 
 > **Note:** You can run these tests locally using PowerShell commands detailed below (headless or in UI mode), or via the provided GitHub Actions workflow.
+
+
+## Test Scenarios Overview
+
+### Scenario 1 – Confirm VoucherCodes Page Loads
+
+- Navigates to the VoucherCodes homepage
+- Verifies the URL and page title
+- Accepts the cookie modal (if displayed)
+- Confirms visibility of the logo link and search bar
+
+### Scenario 2 – Restaurant Search Success
+
+- Opens the homepage and handles the cookie modal
+- Opens the Categories menu and selects Restaurants
+- Verifies the Restaurants vouchers page layout
+- Completes the search form using:
+  - Location: London
+  - 2 people
+- Clicks Search and confirms the results page loads successfully
+
+### Scenario 3 – Deliberate Failure Test
+
+- Navigates to the homepage
+- Intentionally validates an incorrect URL to force a controlled failure
+- Captures a screenshot and logs diagnostic information when the test fails
 
 ## Playwright Framework – Implementation Approach
 
