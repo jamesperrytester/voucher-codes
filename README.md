@@ -124,8 +124,7 @@ This GitHub Actions workflow automates Playwright test execution across multiple
 ### 🧩 Configurable Inputs
 
 | Input   | Description                                 | Required | Default | Options                        |
-|---------|---------------------------------------------|----------|---------|-------------------------------|
-| env     | Target environment (qa, stage, demo, live)  | ❌       | (empty) | Custom string                  |
+|---------|---------------------------------------------|----------|---------|-------------------------------|           |
 | tests   | Specific tests to run (space-separated)     | ❌       | (empty) | Custom string                  |
 | browser | Browser to run tests on                     | ✅       | chrome  | all, chrome, firefox, webkit   |
 

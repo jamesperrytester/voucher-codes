@@ -20,6 +20,11 @@ test('Confirm VoucherCodes page loads and header exists', async ({ page }) => {
     }
   });
 
+  await test.step('Wait for logo before checking title', async () => {
+    await page.waitForSelector('a[data-qa="el:vcLogoLink"]', { timeout: 10000 });
+    await expect(page).toHaveTitle(/VoucherCodes/);
+  });
+
   await test.step('Confirm VoucherCodes logo link is present', async () => {
     const logoLink = page.locator('a[data-qa="el:vcLogoLink"]');
     await expect(logoLink).toBeVisible();
